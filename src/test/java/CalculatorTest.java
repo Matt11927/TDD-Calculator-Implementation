@@ -21,6 +21,19 @@ public class CalculatorTest {
         assertEquals(expected,actual); // If pass in match, pass test else fails
 
     }
+    @Test
+    public void testSumNegative(){
+        int expected = -3;
+        int actual = calculator.sum(-1,-2); // == -1
+        assertEquals(expected,actual);
+    }
+
+    @Test
+    public void testSumZero(){
+        int expected = 0;
+        int actual = calculator.sum(0,0); // == 0
+        assertEquals(expected,actual);
+    }
 
     @Test
     public void testSubtract(){
