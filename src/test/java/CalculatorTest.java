@@ -12,10 +12,10 @@ public class CalculatorTest {
     //Junit will need to be public void method is how to create a unit test
 
     @Test
-    public void testsum(){
-        //important to fail the test first
-        int expected = -1;
-        int actual = 2;
+    public void testSum(){
+        //fixed test
+        int expected = 3;
+        int actual = calculator.sum(1,2); // == 3
         assertEquals(expected,actual); // If pass in match, pass test else fails
 
     }
